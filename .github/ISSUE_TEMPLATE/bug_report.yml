@@ -27,7 +27,7 @@ body:
       placeholder: "Example: An error occurrs when I try to save the chart. (例如：我在保存谱面时遇到了一个错误)"
     validations:
       required: true
-  
+
   - type: textarea
     id: reproduce
     attributes:
@@ -37,8 +37,8 @@ body:
         1. Execute command `...` (执行命令 `...`)
         2. Click `...` (点击 `...`)
         3. See an error `...` (看到错误 `...`)
-      validations:
-        required: true
+    validations:
+      required: true
 
   - type: textarea
     id: expected
@@ -54,7 +54,7 @@ body:
       label: Actual Behavior (实际行为)
       description: What actually happened? Please embed screenshots or logs if possible. (实际发生了什么？请尽可能附上截图或日志)
       render: shell
-  
+
   - type: input
     id: version
     attributes:
