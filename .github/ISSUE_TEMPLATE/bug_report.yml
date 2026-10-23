@@ -1,0 +1,79 @@
+name: Bug Report
+description: Report a bug or malfunction in Arcade-Chan (报告Arcade-Chan的一个 Bug 或 异常行为)
+title: "[Bug]: "
+labels: ["bug", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report this issue. Please fill out the following information as thoroughly as possible so we can reproduce and fix it.
+        感谢你花时间报告这个问题。请尽可能详细地填写以下信息，以便我们复现和修复。
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before creating an issue... (在创建Issue之前……)
+      options:
+        - label: I searched the existing issues and CONFIRM this is not a duplicate. (我已经搜索了现有的Issues，确认这不是重复问题)
+          required: true
+        - label: I CAN reproduce this issue on the latest version of Arcade-Chan. (我可以在最新版本的Arcade-Chan中复现此问题)
+          required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Issue Description (问题描述)
+      description: Please describe what issue you met, simply and clearly. (请简明清楚地描述你遇到的问题)
+      placeholder: "Example: An error occurrs when I try to save the chart. (例如：我在保存谱面时遇到了一个错误)"
+    validations:
+      required: true
+  
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Reproduction Steps (复现步骤)
+      description: Please provide a minimal but complete set of steps to reproduce the issue. (请提供一个最小、完整的复现步骤)
+      placeholder: |
+        1. Execute command `...` (执行命令 `...`)
+        2. Click `...` (点击 `...`)
+        3. See an error `...` (看到错误 `...`)
+      validations:
+        required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior (预期行为)
+      description: What did you expect to happen? (你期望发生什么？)
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual Behavior (实际行为)
+      description: What actually happened? Please embed screenshots or logs if possible. (实际发生了什么？请尽可能附上截图或日志)
+      render: shell
+  
+  - type: input
+    id: version
+    attributes:
+      label: Version (版本)
+      description: The app version you are currently using. (你当前使用的软件版本)
+      placeholder: "Example: v4.2.0-rc1 (例如：v4.2.0-rc1)"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: os
+    attributes:
+      label: Operating System (操作系统)
+      options:
+        - Windows x64
+        - Linux (using Wine/Proton | 使用Wine/Proton兼容运行)
+        - macOS x64 (using CrossOver | 使用CrossOver兼容运行)
+        - Android (安卓)
+        - iOS
+        - Others (其他)
+    validations:
+      required: true

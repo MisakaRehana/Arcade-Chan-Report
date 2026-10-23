@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 📖 Docs (📖 文档)
+    url: https://github.com/MisakaRehana/Arcade-Chan-Docs
+    about: Read the documents before questioning, especially it solves your problem. (在提问前，请先查阅文档，尤其是它已经足够解决你的问题的时候。)
+  - name: 💬 Discussions (💬 讨论区)
+    url: https://github.com/MisakaRehana/Arcade-Chan-Report/discussions
+    about: Use Discussions to ask questions or exchange ideas. (使用讨论区进行提问或交流想法。)
+  - name: 🔒 Security Advisories (🔒 安全问题)
+    url: https://github.com/MisakaRehana/Arcade-Chan-Report/security/advisories/new
+    about: Please report any security vulnerabilities privately. (请私下报告任何安全漏洞。)

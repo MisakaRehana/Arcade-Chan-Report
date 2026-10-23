@@ -1,0 +1,27 @@
+name: Feature Request
+description: Recommend a new feature or an enhancement (建议一个新功能或改进)
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem Background (问题背景)
+      description: What problem(s) should this feature solve? Please provide a use case. (这个功能要解决什么问题？请描述你的使用场景。)
+      placeholder: "Example: 'When I try to do X, I always need to manually do Y, which makes it difficult.' (例如：“当我在尝试做 X 时，总是需要手动做 Y，这很麻烦。”)"
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Expected Solutions (期望的解决方案)
+      description: How do you want this feature to work? Please provide an usage example if convenient. (你希望这个功能如何工作？如果方便的话，请提供一个用法示例。)
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives Considered (考虑过的替代方案)
+      description: Did you consider any other approaches or workarounds? (你是否考虑过其他方法或变通方案？)
